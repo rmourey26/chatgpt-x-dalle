@@ -16,8 +16,11 @@ Need a React.js version? Check [here](https://github.com/rmourey26/chatgpt-react
 - Highlight code syntax
 
 ## Technologies Used
-- For client, I haven't used frameworks as this is simple demo version.
-- For server, I used express.
+- Client Side - JS, HTML
+- Server Side - Express
+- Support for NixOS nix-shell
+  - $ nix-shell 
+  - Substitute above 'npm' commands with 'yarn'
 
 ## Setup
 ### Prerequisites
