@@ -136,8 +136,8 @@ select {
 }
 
 #regenerate-response-button {
-    display: none;
-    color: white;
+    display: contain;
+    color: black;
     border: none;
     background: #10A37F;
     border-radius: 4px;
@@ -152,14 +152,14 @@ select {
 }
 
 #model-select-container {
-    color: white;
+    color: black;
 }
 
 #model-select-container select {
     background: transparent;
     border: none;
     outline: none;
-    color: white;
+    color: black;
 }
 
 #model-select-container select option:not(:checked) {
