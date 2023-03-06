@@ -85,11 +85,11 @@ select {
 }
 
 .chatgpt-response {
-    background-color: rgba(226, 223, 210, 1);
+    background-color: rgba(188,187,184,1);
 }
 
 .my-question {
-    background-color: rgba(52, 53, 65, 1);
+    background-color: rgba(188, 187, 184, 1);
 }
 /* Change background color of the input container */
 #input-container {
@@ -97,7 +97,7 @@ select {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: rgba(64, 65, 79, 1);
+    background-color: rgba(188, 187, 184,1);
     border-color: rgba(32,33,35,.5);
     border-radius: 5px;
     margin-top: 10px;
@@ -109,7 +109,7 @@ select {
     padding: 10px;
     border-radius: 5px;
     min-height: 20px;
-    color: white;
+    color: black;
     overflow: auto;
 }
 
