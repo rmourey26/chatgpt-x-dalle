@@ -10,6 +10,16 @@ body {
     margin: 0;
 }
 
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #d5ebea;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(213,235,234,0.5), rgba(255,255,255,0.5));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(213,235,234,0.5), rgba(255,255,255,0.5))
+}
 select {
     max-width: 100%;
     text-overflow: ellipsis;
