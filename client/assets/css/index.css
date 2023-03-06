@@ -3,7 +3,7 @@ html, body {
 }
 /* Add background color to the body */
 body {
-    background-color: rgba(68, 70, 84, 1.0);
+    background-color: rgba(243, 242, 237, 1.0);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
