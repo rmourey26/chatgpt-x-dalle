@@ -85,11 +85,11 @@ select {
 }
 
 .chatgpt-response {
-    background-color: rgb(125, 192, 194);
+    background-color: rgba(125, 192, 194, 0);
 }
 
 .my-question {
-    background-color: rgb(125, 192, 194);
+    background-color: rgba(125, 192, 194,0);
     margin-bottom: 0;
 }
 /* Change background color of the input container */
@@ -98,8 +98,8 @@ select {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: rgb(125, 192, 194);
-    border-color: rgba(32,33,35,.5);
+    background-color: rgba(125, 192, 194, 0);
+    border-color: rgba(255,255,255,.5);
     border-radius: 5px;
     margin-top: 10px;
 }
@@ -153,14 +153,14 @@ select {
 }
 
 #model-select-container {
-    color: black;
+    color: white;
 }
 
 #model-select-container select {
     background: transparent;
     border: none;
     outline: none;
-    color: black;
+    color: white;
 }
 
 #model-select-container select option:not(:checked) {
