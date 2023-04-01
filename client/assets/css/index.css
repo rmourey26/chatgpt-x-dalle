@@ -110,7 +110,7 @@ select {
     padding: 10px;
     border-radius: 5px;
     min-height: 20px;
-    color: black;
+    color: white;
     overflow: auto;
 }
 
@@ -140,7 +140,7 @@ select {
     display: contain;
     color: black;
     border: none;
-    background: #bd9de7;
+    background: #1F51FF;
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
