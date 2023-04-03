@@ -10,12 +10,55 @@ body {
     margin: 0;
 }
 
+
+.body2 {
+ background-image: linear-gradient(220deg, #564f9c, transparent), linear-gradient(50deg, #ed3d63, transparent);
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ margin: 0;
+}
+.gradient-anima { 
+  padding: 1.5rem;
+  border-radius: 0.618rem;
+  color: #ECECF1;
+  background: linear-gradient(to left, #070809, #564f9c, #070809);
+  background-size: 200% 200%;
+  background-position: -100% 0;
+  animation: loading-gradient 4s ease-in-out infinite;
+  animation-direction: alternate;
+  animation-name: loading-gradient;
+}
+
+@keyframes loading-gradient {
+    0% {
+      background-position: -100% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  .apimessage {
+    background: #141619;
+    padding: 1.5rem;
+    color: #ECECF1;
+    animation: fadein 0.5s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  .apimessage, .usermessage, .usermessagewaiting {
+    display: flex;
+  }
 .gradient-custom {
     /* fallback for old browsers */
     background: #d5ebea;
   
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(213,235,234,0.5), rgba(255,255,255,0.5));
+    background: -webkit-linear-gradient(to right, rgba(213,235,234,0.5), rgba(56, 3, 3, 0.5));
   
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right, rgba(213,235,234,0.5), rgba(255,255,255,0.5))
@@ -138,9 +181,15 @@ select {
 
 #regenerate-response-button {
     display: contain;
-    color: black;
+    color: snow;
     border: none;
-    background: #1F51FF;
+    background: linear-gradient(to left, #070809, #ed3d63, #070809);
+    background-size: 200% 200%;
+    background-position: -100% 0;
+    animation: loading-gradient 4s ease-in-out infinite;
+    animation-direction: alternate;
+    animation-name: loading-gradient;
+    background: #4459a3;
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
