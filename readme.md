@@ -1,7 +1,6 @@
-# ChatGPT Playground
+# chatgpt-x-dalle (CXD)
 
-A web application that allows users to interact with OpenAI's GPT-3 language model through a simple and user-friendly interface.
-This app is for demo purpose to test OpenAI API and may contain issues/bugs.
+## CXD combines two of the best AI tools currently available - OpenAI's ChatGPT and DALLE - into one simple, easy to use app. Within seconds, users can toggle between 4 AI models including ChatGPT-3.5-turbo, GPT-3, CODEX, and of course DALLE image generator. The app also provides a great starting point for developers looking to build openai integrated software and applications. Please keep in mind that this is not a production level application and may contain issues/bugs. The app presently utilizes an Express server and a mixture of HTML and JS on the client side.
 
 Need a React.js version? Check [here](https://github.com/rmourey26/chatgpt-react)
 
@@ -12,7 +11,7 @@ Need a React.js version? Check [here](https://github.com/rmourey26/chatgpt-react
 ## Features
 - User-friendly interface for making requests to the OpenAI API
 - Responses are displayed in a chat-like format
-- Select Models (Davinci, Codex, Create Image) based on your needs
+- Select from models GPT-3.5-tubo, GPT-3, Codex, and DALLE image 
 - Highlight code syntax
 
 ## Technologies Used
@@ -20,7 +19,7 @@ Need a React.js version? Check [here](https://github.com/rmourey26/chatgpt-react
 - Server Side - Express
 - Support for NixOS nix-shell
   - $ nix-shell 
-  - Substitute above 'npm' commands with 'yarn'
+  - if you're running NixOS, you already know what to do ;-)
 
 ## Setup
 ### Prerequisites
@@ -29,7 +28,7 @@ Need a React.js version? Check [here](https://github.com/rmourey26/chatgpt-react
 ### Installation
 1. Clone the repository:
 ```sh
-git clone https://github.com/rmourey26/chatgpt-playground
+git clone https://github.com/rmourey26/chatgpt-x-dalle
 ```
 2. Install the dependencies:
 ```sh
