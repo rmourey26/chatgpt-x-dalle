@@ -86,6 +86,7 @@ select {
 
 #response-list .response-container, #bottom-container {
     padding: 15px 10%;
+    background-color: inherit;
 }
 
 @media (pointer:none), (pointer:coarse) {
@@ -151,7 +152,7 @@ select {
 #prompt-input {
     flex-grow: 1;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 6px;
     min-height: 20px;
     color: white;
     overflow: auto;

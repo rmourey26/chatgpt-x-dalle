@@ -1,46 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ChatGPT DALLE Editor</title>
-    <link rel="stylesheet" href="./assets/css/highlight.min.css">
-    <link rel="stylesheet" href="./assets/css/index.css">
-    <link rel="icon" href="favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description"
-          content="ChatGPT DALLE Editor"
-    />
+    <meta charset="utf-8">
+    <title>CKEditor 5 – premium features sample</title>
     <style>
-    /* Set the minimum height of Classic editor */
+        body {
+            max-width: 100%;
+            padding: 0 20px;
+            margin: 20px auto;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            overflow-y: scroll;
+        }
+        /* Set the minimum height of Classic editor */
         .ck.ck-editor__editable_inline:not(.ck-editor__nested-editable) {
             min-height: 400px;
         }
         /* Styles to render an editor with a sidebar for comments & suggestions */
         .container {
             display: flex;
-            margin: auto;
-            width: 80%;
-            border: #FAFAFA;
-            border-width: 1px;
-            border-radius: 0.618rem;
-            height: auto;
-            overflow: scroll;
-            max-height: 500px;
-            max-width: fit-content;
-            
+            flex-direction: row;
         }
         .sidebar {
-            width: 200px;
-            background-color: black;
-        
+            width: 320px;
         }
         #editor-container .ck.ck-editor {
-            width: auto;
+            width: 860px;
         }
         #editor-container .sidebar {
-            margin-left: 0px;
+            margin-left: 20px;
         }
         #editor-container .sidebar.narrow {
-            width: 0px;
+            width: 30px;
         }
         /* Keep the automatic height of the editor for adding comments */
         .ck-annotation-wrapper .ck.ck-editor__editable_inline {
@@ -57,7 +47,7 @@
             min-height: 400px;
         }
         #revision-viewer-container .sidebar {
-            border: 1px #aa2424 solid;
+            border: 1px #c4c4c4 solid;
             margin-left: -1px;
             width: 320px;
         }
@@ -70,9 +60,11 @@
         }
     </style>
 </head>
-<body 
-class="body2 h-100">
-<div></div>
+<body>
+
+<h1>CKEditor 5 – premium features sample</h1>
+
+<!-- Use simpler CSS and HTML structure if you do not want to integrate i.e. the Revision history feature. !-->
 <div id="presence-list-container"></div>
 
 <div id="editor-container">
@@ -124,9 +116,9 @@ class="body2 h-100">
                 'link', 'blockQuote', 'insertTable', 'mediaEmbed', 'codeBlock', 'htmlEmbed', '|',
                 'specialCharacters', 'horizontalLine', 'pageBreak', '|',
                 // Intentionally skipped buttons to keep the toolbar smaller, feel free to enable them:
-                 'code', 'subscript', 'superscript', 'textPartLanguage', '|',
+                // 'code', 'subscript', 'superscript', 'textPartLanguage', '|',
                 // ** To use source editing remember to disable real-time collaboration plugins **
-                 'sourceEditing',
+                // 'sourceEditing'
             ],
             shouldNotGroupWhenFull: true
         },
@@ -173,16 +165,16 @@ class="body2 h-100">
         },
         // Be careful with the setting below. It instructs CKEditor to accept ALL HTML markup.
         // https://ckeditor.com/docs/ckeditor5/latest/features/general-html-support.html#enabling-all-html-features
-         htmlSupport: {
-         	allow: [
-         		{
-         			name: /.*/,
-         			attributes: true,
-         			classes: true,
-         			styles: true
-         		}
-         	]
-         },
+        // htmlSupport: {
+        // 	allow: [
+        // 		{
+        // 			name: /.*/,
+        // 			attributes: true,
+        // 			classes: true,
+        // 			styles: true
+        // 		}
+        // 	]
+        // },
         // Be careful with enabling previews
         // https://ckeditor.com/docs/ckeditor5/latest/features/html-embed.html#content-previews
         htmlEmbed: {
@@ -204,7 +196,7 @@ class="body2 h-100">
             ]
         },
         // https://ckeditor.com/docs/ckeditor5/latest/features/editor-placeholder.html#using-the-editor-configuration
-        placeholder: 'Welcome to your ChatGPT DALLE WYSIWYG App! Create rich HTML webpages, PDFs, Word docs, spreadsheets, equations, and more all with ChatGPT and DALLE at your fingertips!',
+        placeholder: 'Welcome to CKEditor 5!',
         // Used by real-time collaboration
         cloudServices: {
             // Be careful - do not use the development token endpoint on production systems!
@@ -331,36 +323,5 @@ class="body2 h-100">
             console.error( 'There was a problem initializing the editor.', error );
         } );
 </script>
-
-<div id="response-list">
-</div>
-<div id="bottom-container">
-    <div id="regenerate-button-container">
-        <button id="regenerate-response-button">
-            Regenerate Response
-        </button>
-    </div>
-    <div id="model-select-container">
-        <label for="model-select">Select model:</label>
-        <select id="model-select">
-            <option value="chatgpt" selected>ChatGPT 3.5-Turbo(Improved version of GPT-3 and can understand as well as generate natural language or code)</option>
-            <option value="gpt">GPT-3 (Understand and generate natural language )</option>
-            <option value="codex">Codex (Understand and generate code, including translating natural language to code)</option>
-            <option value="image">Create Image (Create AI image using DALL·E models)</option>
-        </select>
-    </div>
-    <div class="gradient-anima">
-    
-        <div id="input-container">
-        
-        <div id="prompt-input" contentEditable></div>
-        <button id="submit-button"></button>
-        </div>
-    </div>
-</div>
-</div>
-<script src="./assets/js/highlight.min.js"></script>
-<script src="./assets/js/showdown.min.js"></script>
-<script src="./assets/js/index.js"></script>
 </body>
 </html>
